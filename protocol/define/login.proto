@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb_login;
+option go_package = "generated/code/pb_login";
+
+message LoginReq {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginAck {
+  bool success = 1;
+}
